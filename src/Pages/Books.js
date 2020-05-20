@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
-import JumboBooks from "../Components/Jumbotrons/JumboBooks";
+import JumbotronDefault from '../Components/Jumbotrons/JumbotronDefault'
 import { useEffect, useState } from "react";
 
 export default function Books({ action, returnCount }) {
@@ -114,103 +114,103 @@ export default function Books({ action, returnCount }) {
 
     const book2 = [
         {
-            label: "Toombs",
+            label: "Robert Toombs 1880",
             fileName: "images/book2/gallery/Toombs.jpg"
         },
         {
-            label: "Model Office Seeker",
+            label: "Model Office Seeker 1881",
             fileName: "images/book2/gallery/Model Office Seeker.jpg"
         },
         {
-            label: "Spencer",
-            fileName: "images/book2/gallery/Spencer.jpg"
-        },
-        {
-            label: "Between Two Evils",
+            label: "Between Two Evils 1881",
             fileName: "images/book2/gallery/Between Two Evils.jpg"
         },
         {
-            label: "What R U Going to do",
+            label: "In Danger 1881",
             fileName: "images/book2/gallery/What R U Going to do.jpg"
+        },
+        {
+            label: "The Curse of California 1882",
+            fileName: "images/book2/gallery/Curse of California.jpg"
+        },
+        {
+            label: "The Protectors of Our Industries 1883",
+            fileName: "images/book2/gallery/Protectors.jpg"
+        },
+        {
+            label: "Herbert Spencer 1883",
+            fileName: "images/book2/gallery/Spencer.jpg"
         },
         {
             label: "The Panic of 1884",
             fileName: "images/book2/gallery/The Panic of 1884.jpg"
         },
         {
-            label: "Beecher",
-            fileName: "images/book2/gallery/Beecher.jpg"
-        },
-        {
-            label: "Two Roads",
-            fileName: "images/book2/gallery/Two Roads.jpg"
-        },
-        {
-            label: "Haymarket Flier",
-            fileName: "images/book2/gallery/Haymarket Flier.jpg"
-        },
-        {
-            label: "Democracy",
-            fileName: "images/book2/gallery/Democracy.jpg"
-        },
-        {
-            label: "Populist Balloon",
-            fileName: "images/book2/gallery/Populist Balloon.jpg"
-        },
-        {
-            label: "Let Them Have it All",
+            label: "Let Them Have It All c.1885",
             fileName: "images/book2/gallery/Let Them Have it All.jpg"
         },
         {
-            label: "Curse of California",
-            fileName: "images/book2/gallery/Curse of California.jpg"
+            label: "Reverend Beecher 1885",
+            fileName: "images/book2/gallery/Beecher.jpg"
         },
         {
-            label: "Protectors",
-            fileName: "images/book2/gallery/Protectors.jpg"
+            label: "Two Roads for the Working Man c.1885",
+            fileName: "images/book2/gallery/Two Roads.jpg"
         },
         {
-            label: "The Situation",
-            fileName: "images/book2/gallery/The Situation.jpg"
+            label: "Haymarket Flier 1886",
+            fileName: "images/book2/gallery/Haymarket Flier.jpg"
         },
         {
-            label: "1893 Exposition",
+            label: "Triumphant Democracy 1889",
+            fileName: "images/book2/gallery/Democracy.jpg"
+        },
+        {
+            label: "Party of Patches 1891",
+            fileName: "images/book2/gallery/Populist Balloon.jpg"
+        },
+        {
+            label: "The Colombian Exposition 1893",
             fileName: "images/book2/gallery/1893 Exposition.jpg"
         },
         {
-            label: "King Debs",
-            fileName: "images/book2/gallery/King Debs.jpg"
+            label: "The Situation c.1894",
+            fileName: "images/book2/gallery/The Situation.jpg"
         },
         {
-            label: "Pullman Vise",
+            label: "The Pullman Vise 1894",
             fileName: "images/book2/gallery/Pullman Vise.jpg"
         },
         {
-            label: "Atlas Joe Pulitzer",
+            label: "King Debs 1894",
+            fileName: "images/book2/gallery/King Debs.jpg"
+        },
+        {
+            label: "Atlas Joe 1896",
             fileName: "images/book2/gallery/Atlas Joe Pulitzer.jpg"
         },
         {
-            label: "Down Hill Movement",
-            fileName: "images/book2/gallery/Down Hill Movement.jpg"
-        },
-        {
-            label: "Cross of Gold",
+            label: "Cross of Gold 1896",
             fileName: "images/book2/gallery/Cross of Gold.jpg"
         },
         {
-            label: "Happy New Year 1899",
+            label: "Down Hill Movement 1896",
+            fileName: "images/book2/gallery/Down Hill Movement.jpg"
+        },
+        {
+            label: "It Ought to be a Happy New Year 1899",
             fileName: "images/book2/gallery/Happy New Year 1899.jpg"
         },
         {
-            label: "Antiexpansionists",
+            label: "A Lesson for Antiexpansionists 1899",
             fileName: "images/book2/gallery/Antiexpansionists.jpg"
         },
         {
-            label: "Survival of the Fittest",
+            label: "Survival of the Fittest 1900",
             fileName: "images/book2/gallery/Survival of the Fittest.jpg"
         },
         {
-            label: "Stages of Man",
+            label: "Life and Age of Man c.1900",
             fileName: "images/book2/gallery/Stages of Man.jpg"
         },
     ];
@@ -222,13 +222,13 @@ export default function Books({ action, returnCount }) {
     const [imageIndex, toggleWhichIndex] = useState(0);
     const [showMore1, toggleShowMore1] = useState(false);
     const [showMore2, toggleShowMore2] = useState(false);
-    const fileName = book === 1 && imageIndex !== undefined ? book1[imageIndex].fileName : book2[imageIndex].fileName;
-    const label = book === 1 && imageIndex !== undefined ? book1[imageIndex].label : book2[imageIndex].label;
+    const fileName = book === 1 ? book1[imageIndex].fileName : book2[imageIndex].fileName;
+    const label = book === 1 ? book1[imageIndex].label : book2[imageIndex].label;
 
     useEffect(() => {
         if (action === "bookScroll")
             window.scrollTo({
-                top: 1400,
+                top: 1550,
                 behavior: 'smooth'
             });
     }, [returnCount]);
@@ -239,7 +239,7 @@ export default function Books({ action, returnCount }) {
         for (let i = 0; i < limit; i++) {
             images.push(
                 <img
-                    className="toc-image"
+                    className={`toc-image${book}`}
                     key={i}
                     src={`images/book${book}/toc/${i}.jpg`}
                     alt={`tocImage`}
@@ -272,7 +272,7 @@ export default function Books({ action, returnCount }) {
                     <Card.ImgOverlay>
                         <Card.Text
                             className="mx-auto">
-                            {label}
+                            {whichBook[i].label}
                         </Card.Text>
                     </Card.ImgOverlay>
                 </Card>
@@ -284,12 +284,11 @@ export default function Books({ action, returnCount }) {
     const ShowMoreGallery = ({ book }) =>
         <RenderGallery
             book={book}
-            extra={true}
-        />;
+            extra={true} />;
 
     return (
         <div>
-            <JumboBooks />
+            <JumbotronDefault title={"Books"} />
             <Container className="container-body booksContainer" style={{ marginBottom: "50px" }}>
                 <Row style={{ justifyContent: "center" }}>
                     <Col>
@@ -401,7 +400,7 @@ export default function Books({ action, returnCount }) {
                 <Modal.Body
                     className="mx-auto bgBlack">
                     {book > -1 &&
-                        <img className="galleryModalImg" src={fileName} />}
+                        <img className="galleryModalImg" src={fileName} alt={label} />}
                 </Modal.Body>
             </Modal>
         </div >

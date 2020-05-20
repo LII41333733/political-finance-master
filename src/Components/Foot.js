@@ -42,7 +42,7 @@ export default function Foot({ changeRoute }) {
                                 <h5
                                     className="cursor"
                                     onClick={() => changeRoute({
-                                        page: "blogs",
+                                        page: "articles",
                                         action: ""
                                     })}>Articles</h5>
                                 <h5
@@ -51,6 +51,12 @@ export default function Foot({ changeRoute }) {
                                         page: "iaq",
                                         action: ""
                                     })}>IAQs</h5>
+                                <h5
+                                    className="cursor"
+                                    onClick={() => changeRoute({
+                                        page: "about",
+                                        action: ""
+                                    })}>About</h5>
                             </Col>
                         </Row>
                         {/* <Row>

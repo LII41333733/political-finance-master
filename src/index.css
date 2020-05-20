@@ -58,6 +58,10 @@ body {
   height: 100%;
 }
 
+.slimContain {
+  padding: 0 200px !important;
+}
+
 .container-body {
   min-height: 95vh;
   margin-bottom: 200px;
@@ -77,6 +81,11 @@ p, table, body {
 
 .nav-link {
   font-family: "Schadow";
+}
+
+.nav-link-confirm {
+  font-family: "Schadow";
+  color: #173040;
 }
 
 .cover {
@@ -161,7 +170,7 @@ p, table, body {
   border-radius: 0px 0px 3px 3px;
   height: 50px;
   width: 100%;
-  padding: 0 25%;
+  padding: 0 10%;
 }
 
 .footer {
@@ -317,6 +326,10 @@ h3 {
 
 /********************************************************** Utility Classes */
 
+.w-10 {
+  width: 10%;
+}
+
 .bgBlack {
   background-color: black;
 }
@@ -331,10 +344,6 @@ h3 {
 
 .clearRight {
   clear: right;
-}
-
-.slimContain {
-  padding: 0 200px !important;
 }
 
 .hoverZoom {
@@ -355,7 +364,7 @@ h3 {
 
 .textBlock {
   line-height: 35px;
-  text-align: left;
+  text-align: justify;
 }
 
 .textLine {
@@ -455,8 +464,12 @@ h3 {
   width: auto;
 }
 
-.toc-image {
+.toc-image1 {
   max-width: 425px;
+}
+
+.toc-image2 {
+  max-width: 500px;
 }
 
 .fa-plus-circle {
@@ -611,17 +624,16 @@ h3 {
 
 .infoBtnCircle {
   border: 3px solid #173041;
-  height: 25px;
-  width: 26px;
+  height: 28px;
+  width: 28px;
   background-color: white;
   border-radius: 75%;
   display: inline-block;
   position: absolute;
-  /* left: 50px; */
-  /* top: 32%; */
   z-index: 20;
-  bottom: 19px;
+  bottom: 26px;
   right: 20px;
+  padding-top: 1px;
 }
 
 .infoIcon {
@@ -641,12 +653,17 @@ h3 {
   padding: 0 !important;
 }
 
+.toolCardLong {
+  min-height: 420px;
+}
+
 .toolCard h5 {
   font-size: 1.1rem;
 }
 
 .toolCard .card-img-top {
   height: 170px;
+  min-width: 273px;
 }
 
 /****************************************************** Animations */
@@ -670,7 +687,7 @@ h3 {
   }
 }
 
-/***************************************************** Blogs */
+/***************************************************** Articles */
 
 .footerDash {
   width: 250px;
@@ -681,6 +698,10 @@ h3 {
 .articlesContainer img {
   max-width: 400px;
   margin: 0 15px 15px 0;
+}
+
+.articlesContainer p {
+  text-align: justify;
 }
 
 .articleImg {
@@ -718,4 +739,24 @@ h3 {
 .articleCardTitle {
   font-size: 22px;
   letter-spacing: 1px;
+}
+
+/***************************************************** PayPal */
+
+input {
+  width: 100%;
+  height: inherit;
+}
+
+.modal-open {
+  padding-right: 15px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .jumbo-homepage {
+    height: inherit;
+  }
+  .cover {
+    top: 0;
+  }
 }

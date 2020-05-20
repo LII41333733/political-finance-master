@@ -1,12 +1,13 @@
 {
   "name": "political-finance",
-  "homepage": "https://LII41333733.github.io/political-finance",
+  "homepage": "https://lii41333733.github.io/political-finance-master/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-solid-svg-icons": "^5.12.1",
     "@fortawesome/react-fontawesome": "^0.1.9",
+    "@restart/context": "2.1.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -14,8 +15,9 @@
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
-    "react-loading-overlay": "^1.0.1",
-    "react-scripts": "3.3.0",
+    "react-paypal-button": "^4.1.1",
+    "react-paypal-button-v2": "^2.6.2",
+    "react-scripts": "^3.4.0",
     "reactstrap": "^8.4.0"
   },
   "scripts": {
