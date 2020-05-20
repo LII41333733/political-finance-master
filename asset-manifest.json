@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/political-finance-master/static/css/main.ae9ddd5d.chunk.css",
-    "main.js": "/political-finance-master/static/js/main.964e7182.chunk.js",
-    "main.js.map": "/political-finance-master/static/js/main.964e7182.chunk.js.map",
+    "main.css": "/political-finance-master/static/css/main.8852f951.chunk.css",
+    "main.js": "/political-finance-master/static/js/main.9a149ee4.chunk.js",
+    "main.js.map": "/political-finance-master/static/js/main.9a149ee4.chunk.js.map",
     "runtime-main.js": "/political-finance-master/static/js/runtime-main.3edad1d0.js",
     "runtime-main.js.map": "/political-finance-master/static/js/runtime-main.3edad1d0.js.map",
     "static/css/2.829c9cb5.chunk.css": "/political-finance-master/static/css/2.829c9cb5.chunk.css",
     "static/js/2.9a3ec843.chunk.js": "/political-finance-master/static/js/2.9a3ec843.chunk.js",
     "static/js/2.9a3ec843.chunk.js.map": "/political-finance-master/static/js/2.9a3ec843.chunk.js.map",
     "index.html": "/political-finance-master/index.html",
-    "precache-manifest.e36ed7c31240cfd55902d2831a882593.js": "/political-finance-master/precache-manifest.e36ed7c31240cfd55902d2831a882593.js",
+    "precache-manifest.9f1e006f9c91d767fd9597321ec12243.js": "/political-finance-master/precache-manifest.9f1e006f9c91d767fd9597321ec12243.js",
     "service-worker.js": "/political-finance-master/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/political-finance-master/static/css/2.829c9cb5.chunk.css.map",
-    "static/css/main.ae9ddd5d.chunk.css.map": "/political-finance-master/static/css/main.ae9ddd5d.chunk.css.map",
+    "static/css/main.8852f951.chunk.css.map": "/political-finance-master/static/css/main.8852f951.chunk.css.map",
     "static/js/2.9a3ec843.chunk.js.LICENSE.txt": "/political-finance-master/static/js/2.9a3ec843.chunk.js.LICENSE.txt",
     "static/media/index.css": "/political-finance-master/static/media/SchadowBlackCondensed.55bb96d3.ttf",
     "static/media/logo.svg": "/political-finance-master/static/media/logo.5d5d9eef.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.3edad1d0.js",
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.9a3ec843.chunk.js",
-    "static/css/main.ae9ddd5d.chunk.css",
-    "static/js/main.964e7182.chunk.js"
+    "static/css/main.8852f951.chunk.css",
+    "static/js/main.9a149ee4.chunk.js"
   ]
 }
